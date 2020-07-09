@@ -1,0 +1,24 @@
+$top-and-bottom-border: .06rem solid #e5e5e5;
+
+.article-item {
+  padding: 1rem .8rem;
+  border-top: $top-and-bottom-border;
+
+  &:last-of-type {
+    border-bottom: $top-and-bottom-border;
+  }
+
+  span {
+    color: #ec6088;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (max-width: 960px) {
+      font-size: 1.2rem;
+    }
+  }
+}

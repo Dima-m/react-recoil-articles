@@ -1,0 +1,39 @@
+@import './styles/overrides';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,medium,semi-bold,bold&subset=latin,latin-ext');
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Roboto', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.main-wrapper {
+  width: 45%;
+
+  @media (max-width: 960px) {
+    width: 90%;
+  }
+}
+
+.form-group {
+  .form-control {
+    border-bottom: 0.09rem solid #aaaaaa;
+  }
+}
+
+.btn-primary {
+  box-shadow: 0 0.06rem 0.46rem #ec6088;
+}

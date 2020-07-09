@@ -1,0 +1,20 @@
+.article {
+  p {
+    color: #504950;
+    font-size: .91rem;
+  }
+
+  .back-btn {
+    width: 7rem;
+
+    @media (max-width: 960px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 960px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

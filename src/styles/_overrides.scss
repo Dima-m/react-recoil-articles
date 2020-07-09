@@ -1,0 +1,39 @@
+// Bootstrap SCSS variable overrides
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+$sizes: map-merge(
+  (
+    10: 10%,
+    15: 15%,
+    40: 40%
+  ),
+  $sizes
+);
+
+$theme-colors: (
+  'primary': #ec6088,
+);
+
+$headings-color: #4a4a4a;
+
+$btn-border-radius: 2rem;
+$btn-font-weight: 900;
+$btn-font-size: 1rem;
+$btn-padding-y: .7rem;
+$btn-padding-x: 1rem; 
+
+$input-border-radius: .6rem;
+$input-border-color: #eeeeee;
+$input-padding-y: 1rem;
+$input-padding-x: 1rem;
+$input-font-size: 1.3rem;
+$input-placeholder-color: #6e767e;
+
+$form-text-margin-top: .50rem;
+
+$small-font-size: 70%;
+
+@import "~bootstrap";
