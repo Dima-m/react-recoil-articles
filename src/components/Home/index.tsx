@@ -6,7 +6,7 @@ import { ArticleList } from '../ArticleList';
 export const Home: React.FC = (): ReactElement => {
   const history = useHistory();
 
-  const goToCreateNew = (): void => history.push('/create-new');
+  const goToAddNew = (): void => history.push('/add-new');
 
   return (
     <div className='main-wrapper d-flex flex-column'>
@@ -16,7 +16,7 @@ export const Home: React.FC = (): ReactElement => {
         <Button
           variant='primary'
           className='ml-4 add-new-btn'
-          onClick={() => goToCreateNew()}>
+          onClick={() => goToAddNew()}>
           Add New
         </Button>
       </div>
